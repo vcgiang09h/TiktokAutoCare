@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Quyền hiển thị floating widget trên các ứng dụng khác -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Quyền chạy Foreground Service (giữ app sống) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- Android 14+ yêu cầu khai báo loại foreground service cụ thể -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Quyền gửi thông báo (Android 13+ / SDK 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--
+        SDK 30+ yêu cầu khai báo <queries> để có thể kiểm tra
+        và launch các package bên ngoài (TikTok).
+    -->
+    <queries>
+        <!-- TikTok Vietnam -->
+        <package android:name="com.ss.android.ugc.trill" />
+        <!-- TikTok Global -->
+        <package android:name="com.zhiliaoapp.musically" />
+    </queries>
+
+    <application
+        android:name=".AutoCareApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoCare">
+
+        <!-- ── MainActivity: Màn hình cấu hình chính ── -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ── TikTokAutoService: Accessibility Service chạy kịch bản tự động ── -->
+        <!-- BẮT BUỘC android:exported="true" để Android Accessibility Framework (system_server) có thể bind -->
+        <service
+            android:name=".service.TikTokAutoService"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_config" />
+        </service>
+
+        <!-- ── FloatingControlService: Foreground Service vẽ floating widget ── -->
+        <service
+            android:name=".service.FloatingControlService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="automation_control_overlay" />
+        </service>
+
+    </application>
+
+</manifest>

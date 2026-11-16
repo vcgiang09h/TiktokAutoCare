@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoCare</string>
+    <string name="app_subtitle">TikTok Auto Farm • Lightweight Engine</string>
+
+    <!-- Accessibility Service description -->
+    <string name="accessibility_service_description">AutoCare sử dụng quyền Trợ năng để tự động tương tác với TikTok: tìm kiếm chủ đề, xem video, thả tim, lưu video, đọc và viết bình luận. Bạn có thể tắt bất cứ lúc nào trong Cài đặt.</string>
+
+    <!-- Card 1: System Permissions -->
+    <string name="card_permissions_title">1. Trạng thái Quyền hệ thống</string>
+    <string name="perm_accessibility_title">Quyền Trợ năng (Accessibility)</string>
+    <string name="perm_accessibility_desc">Cho phép tự động vuốt và tương tác UI</string>
+    <string name="perm_overlay_title">Quyền Hiển thị nổi (Overlay)</string>
+    <string name="perm_overlay_desc">Cho phép hiện thanh điều khiển tiện lợi</string>
+    <string name="perm_notification_title">Quyền Thông báo (Notification)</string>
+    <string name="perm_notification_desc">Giữ dịch vụ chạy nền ổn định</string>
+    <string name="perm_status_granted">SẴN SÀNG</string>
+    <string name="perm_status_denied">CẤP QUYỀN</string>
+
+    <!-- Card 2: Topic & Watch Config -->
+    <string name="card_topic_title">2. Cấu hình Chủ đề &amp; Thời gian</string>
+    <string name="switch_enable_search">Tìm kiếm theo chủ đề</string>
+    <string name="switch_enable_search_desc">Tắt để lướt tự nhiên trên Dành cho bạn (FYP)</string>
+    <string name="label_keywords">Từ khóa tìm kiếm (mỗi từ khóa 1 dòng):</string>
+    <string name="hint_keywords">review công nghệ\nmẹo vặt cuộc sống\nẩm thực việt nam</string>
+    <string name="label_watch_time">Thời gian xem mỗi video (giây):</string>
+    <string name="hint_min">Tối thiểu</string>
+    <string name="hint_max">Tối đa</string>
+    <string name="label_videos_per_keyword">Số video xem mỗi từ khóa:</string>
+    <string name="switch_enable_time_limit">Hẹn giờ tự động dừng tools</string>
+    <string name="switch_enable_time_limit_desc">Tự động kết thúc phiên và dừng chạy sau số phút cài đặt</string>
+    <string name="label_time_limit_minutes">Thời gian chạy tối đa (phút):</string>
+    <string name="hint_time_limit">30</string>
+
+    <!-- Card 3: Interaction & Comment Config -->
+    <string name="card_interaction_title">3. Cấu hình Tương tác &amp; Bình luận</string>
+    <string name="switch_enable_like">Thả tim video</string>
+    <string name="switch_enable_save">Lưu video (Bookmark)</string>
+    <string name="switch_enable_comment">Bình luận video</string>
+    <string name="switch_enable_comment_desc">Mở khung đọc và tự động gửi bình luận</string>
+    <string name="label_like_rate">Tỷ lệ Thả tim (%):</string>
+    <string name="label_save_rate">Tỷ lệ Lưu video (%):</string>
+    <string name="label_read_cmt_rate">Tỷ lệ Đọc bình luận (%):</string>
+    <string name="label_write_cmt_rate">Tỷ lệ Viết bình luận (%):</string>
+    <string name="label_comment_dict">Danh sách Bình luận (mỗi bình luận 1 dòng):</string>
+    <string name="hint_comment_dict">Video hay quá bạn ơi ❤️\nNội dung hữu ích quá!\nĐỉnh thật sự luôn 👍\nCảm ơn bạn đã chia sẻ ạ!</string>
+
+    <!-- Card 4: Action Button -->
+    <string name="btn_start_overlay">KHỞI CHẠY MENU NỔI</string>
+    <string name="btn_stop_overlay">DỪNG MENU NỔI</string>
+
+    <!-- Status & Alerts -->
+    <string name="msg_permissions_required">Vui lòng cấp đủ quyền Trợ năng và Hiển thị nổi trước khi chạy!</string>
+    <string name="msg_config_saved">Đã lưu cấu hình thành công</string>
+    <string name="notification_channel_name">Dịch vụ điều khiển nổi</string>
+    <string name="notification_channel_desc">Hiển thị thông báo để duy trì thanh điều khiển AutoCare</string>
+    <string name="notification_title">AutoCare đang chạy</string>
+    <string name="notification_content">Thanh điều khiển nổi đang hoạt động</string>
+    <string name="status_ready">Sẵn sàng</string>
+</resources>
