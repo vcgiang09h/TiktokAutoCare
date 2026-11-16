@@ -69,19 +69,19 @@ flowchart TD
 
 <table align="center">
   <tr>
-    <th align="center">Màn hình Cấu hình Chính</th>
-    <th align="center">Hoạt động Thực tế trên TikTok</th>
-    <th align="center">Bảng Điều khiển Nổi (Widget)</th>
+    <th align="center">1. Cấu hình Quyền & Chủ đề</th>
+    <th align="center">2. Cấu hình Tương tác & Spintax</th>
+    <th align="center">3. Hoạt động Thực tế trên TikTok</th>
   </tr>
   <tr>
     <td align="center" valign="top">
-      <img src="./assets/main_activity.png" width="240" alt="Màn hình Cấu hình Chính" />
+      <img src="./assets/ui_screen_1.jpg" width="240" alt="Cấu hình Quyền & Chủ đề" />
     </td>
     <td align="center" valign="top">
-      <img src="./assets/screen_overlay.png" width="240" alt="Hoạt động Thực tế trên TikTok" />
+      <img src="./assets/ui_screen_2.jpg" width="240" alt="Cấu hình Tương tác & Spintax" />
     </td>
-    <td align="center" valign="middle">
-      <img src="./assets/floating_widget.png" width="240" alt="Bảng Điều khiển Nổi" />
+    <td align="center" valign="top">
+      <img src="./assets/ui_screen_3.jpg" width="240" alt="Hoạt động Thực tế trên TikTok" />
     </td>
   </tr>
 </table>

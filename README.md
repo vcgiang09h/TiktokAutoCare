@@ -15,23 +15,23 @@
 
 ---
 
-## 📸 Ảnh chụp Giao diện Ứng dụng (Screenshots)
+## 📸 Ảnh chụp Giao diện Thực tế (Screenshots)
 
 <table align="center">
   <tr>
-    <th align="center">Màn hình Cấu hình Chính</th>
-    <th align="center">Hoạt động Thực tế trên TikTok</th>
-    <th align="center">Bảng Điều khiển Nổi (Widget)</th>
+    <th align="center">1. Cấu hình Quyền & Chủ đề</th>
+    <th align="center">2. Cấu hình Tương tác & Spintax</th>
+    <th align="center">3. Hoạt động Thực tế trên TikTok</th>
   </tr>
   <tr>
     <td align="center" valign="top">
-      <img src="./docs/assets/main_activity.png" width="260" alt="Màn hình Cấu hình Chính" />
+      <img src="./docs/assets/ui_screen_1.jpg" width="260" alt="Cấu hình Quyền & Chủ đề" />
     </td>
     <td align="center" valign="top">
-      <img src="./docs/assets/screen_overlay.png" width="260" alt="Hoạt động Thực tế trên TikTok" />
+      <img src="./docs/assets/ui_screen_2.jpg" width="260" alt="Cấu hình Tương tác & Spintax" />
     </td>
-    <td align="center" valign="middle">
-      <img src="./docs/assets/floating_widget.png" width="260" alt="Bảng Điều khiển Nổi" />
+    <td align="center" valign="top">
+      <img src="./docs/assets/ui_screen_3.jpg" width="260" alt="Hoạt động Thực tế trên TikTok" />
     </td>
   </tr>
 </table>
@@ -180,9 +180,9 @@ AutoCare/
 ├── docs/
 │   ├── assets/                                  # Tài nguyên hình ảnh tài liệu & ảnh chụp giao diện
 │   │   ├── app_icon.png
-│   │   ├── main_activity.png
-│   │   ├── screen_overlay.png
-│   │   └── floating_widget.png
+│   │   ├── ui_screen_1.jpg
+│   │   ├── ui_screen_2.jpg
+│   │   └── ui_screen_3.jpg
 │   └── tiktok_auto_farm_spec.md                 # Tài liệu đặc tả kỹ thuật kiến trúc chuyên sâu
 └── README.md                                    # Hướng dẫn tổng quan & cài đặt dự án
 ```
